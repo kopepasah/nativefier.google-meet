@@ -1,0 +1,4 @@
+node_modules
+app
+.DS_Store
+assets/custom.icns

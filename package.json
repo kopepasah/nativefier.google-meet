@@ -1,0 +1,23 @@
+{
+  "name": "nativefier.google-meet",
+  "version": "0.0.1",
+  "description": "Native web app for Google Meet.",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js && npm run copy && npm run clean",
+    "copy": "cp -R ./app/Meet-darwin-x64/Meet.app /Applications/Google/Meet.app",
+    "clean": "rm -r ./app"
+  },
+  "keywords": [
+    "web",
+    "app",
+    "native",
+    "meet",
+    "meeting"
+  ],
+  "author": "Justin Kopepasah <justin@kopepasah.com>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "nativefier": "^7.7.0"
+  }
+}
